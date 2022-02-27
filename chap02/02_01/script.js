@@ -21,3 +21,9 @@ console.log(employee);
 let prop = 'telephone';
 employee[prop] = '+221778887777';
 console.log(employee);
+
+// méthode 1 retirer une proprièté
+delete employee['telephone'];
+delete employee.country;
+
+console.log(employee);
