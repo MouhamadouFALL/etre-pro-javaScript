@@ -27,3 +27,11 @@ delete employee['telephone'];
 delete employee.country;
 
 console.log(employee);
+
+// acceder à la valeur d'une proprièté
+console.log(employee.firstName); // méthode 1
+console.log(employee['lastName']); // méthode 2
+
+// méthode 3 dynamique
+let prop1 = 'age';
+console.log(employee[prop1]);
