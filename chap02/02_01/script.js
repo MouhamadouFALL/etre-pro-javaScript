@@ -47,3 +47,8 @@ console.log(employee['sayHello']()); // methode 2
 // méthode dynamique
 let methode = 'sayHello';
 console.log(employee[methode]());
+
+// appréhender la boucle for pour parcourir les props d'un objet
+for (const prop in employee){
+    console.log(`nom proprièté : ${prop} et valeur proprièté : ${employee.prop} `);
+}
