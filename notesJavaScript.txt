@@ -1,0 +1,3 @@
+
+Un Objet est un type de variable capable de stocker plusieurs propriétés.
+
