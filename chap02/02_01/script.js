@@ -3,7 +3,11 @@
 let employee = {
     firstName : "Ngor",
     lastName : "FAYE",
-    age : 28
+    age : 28,
+
+    sayHello : function() {
+        return `${this.firstName} say you welcome !`
+    }
 };
 
 // Affiche l'Objet sur la console
@@ -35,3 +39,11 @@ console.log(employee['lastName']); // méthode 2
 // méthode 3 dynamique
 let prop1 = 'age';
 console.log(employee[prop1]);
+
+// Appeler une méthode
+console.log(employee.sayHello()); // methode 1
+console.log(employee['sayHello']()); // methode 2
+
+// méthode dynamique
+let methode = 'sayHello';
+console.log(employee[methode]());
