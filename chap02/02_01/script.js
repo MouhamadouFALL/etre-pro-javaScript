@@ -52,3 +52,4 @@ console.log(employee[methode]());
 for (const prop in employee){
     console.log(`nom proprièté : ${prop} et valeur proprièté : ${employee.prop} `);
 }
+
