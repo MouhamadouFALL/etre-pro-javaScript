@@ -1,7 +1,23 @@
 
 Un Objet est un type de variable capable de stocker plusieurs propriétés.
 
+En JavaScript une fonction est un objet.
+
+***********************************************************************************************
+un constructeur est une fonction
+une fonction est un objet
 Tout objet en JavaScript a un prototype
-Tous les objets en JavaScript implémente le même prototype
+***********************************************************************************************
+
+Tous les objets en JavaScript implémente le même prototype de base
+
+le prototype est l'objet de base du JavaScript
+Le prototype du constructeur est devenu par la suite le prototype de l'objet construit.
+
+le constructeur de l'objet se trouve dans son prototype
+
+Les objets JavaScript sont mutable (on peut les ajouter ou retire des propriétés en cours de route);
+
+
 
 
