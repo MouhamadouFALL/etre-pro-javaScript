@@ -11,6 +11,10 @@ Employee.prototype.sayHello = function (){
     return `${this.firstName} say welcome!`;
 }
 
+Object.defineProperty(Employee.prototype, 'sayHello', {
+    enumerable: false,
+});
+
 let employee = new Employee('Leukk', 'Ndour', 'Mali');
 // afficher la description des propriètés
 console.log(Object.getOwnPropertyDescriptor(Employee.prototype, 'sayHello'));
