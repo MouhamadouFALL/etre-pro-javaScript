@@ -1,3 +1,7 @@
 
 Un Objet est un type de variable capable de stocker plusieurs propriétés.
 
+Tout objet en JavaScript a un prototype
+Tous les objets en JavaScript implémente le même prototype
+
+
