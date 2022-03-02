@@ -13,6 +13,7 @@ Employee.prototype.sayHello = function (){
 
 Object.defineProperty(Employee.prototype, 'sayHello', {
     enumerable: false,
+    configurable: false,
 });
 
 let employee = new Employee('Leukk', 'Ndour', 'Mali');
