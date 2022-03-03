@@ -19,5 +19,10 @@ le constructeur de l'objet se trouve dans son prototype
 Les objets JavaScript sont mutable (on peut les ajouter ou retire des propriétés en cours de route);
 
 
+************************************************************************************************************************
+L'hértage permet de réutiliser le code en créant un objet  
+L'hértage définit la relation est un(e).
+
+
 
 
