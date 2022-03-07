@@ -23,6 +23,3 @@ Les objets JavaScript sont mutable (on peut les ajouter ou retire des propriét�
 L'hértage permet de réutiliser le code en créant un objet  
 L'hértage définit la relation est un(e).
 
-
-
-

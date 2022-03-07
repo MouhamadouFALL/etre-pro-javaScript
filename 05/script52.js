@@ -34,3 +34,5 @@ let customer = new Customer('Leukk', 'Diagne', 00001);
 
 console.log(employee.constructor);
 console.log(customer);
+
+
