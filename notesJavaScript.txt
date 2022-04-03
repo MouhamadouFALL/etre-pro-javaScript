@@ -22,3 +22,136 @@ Les objets JavaScript sont mutable (on peut les ajouter ou retire des propriét�
 ************************************************************************************************************************
 L'hértage permet de réutiliser le code en créant un objet  
 L'hértage définit la relation est un(e).
+
+Les fonctions déclarations sont hisser lors de l'exécution du script.
+les fonctions expressions ne sont pas hisser lors de l'exécution du script et de même que les classes
+
+
+transformation d'objet en flux d'octets
+couche domaine : se trouve la classe Serializable
+Unique Interface qui ne possede pas de methode abstraite
+
+Depuis JDBC2 il existe une maniere standard de se connecter à la base de donnees : DataSource
+
+une pool de connection est un ensemble de connection ouvert
+Librairie pour obtenir une pool de connection : 
+    - Commons DBCP
+    - c3p0
+    - HikariCP (recommender)
+
+couche Repository ou DAO(Data Access Object) : couche qui gere toutes les opérations (CRUD) vers une source de données d'une entité particuliere
+    - Create (SQL Insert)
+    - Read (SQL Select)
+    - Update (SQL Update)
+    - Delete (SQL Delete)
+
+JDBC : est une technologie de persistence
+JDBC se trouve entre la couche DAO et la source de données.
+
+Domaine métier = entité métier + services métier
+
+Un service qui passe des infos de la couche qui est au-dessus de la couche qui est en-dessous est un service passe plat.
+
+
+
+
+
+
+Domaine/métier/analyse/conception/code
+Rôle du modèle du domaine
+Rôle du modèle de conception
+Traduction en Java
+
+Modèle du Domaine : 
+    un modele de conception est un modèle de recherche de solution
+    Le modèle du domaine est la première vue orientée objet
+    La trace entre métier et code est assurée
+    Le code est une autre vue du métier
+    il est quasiment hors informatique 
+    finalement le code n'est là que pour repondre à un besoin métier
+
+    Rôle du modèle du Domaine :
+        - on peut le traduire en code
+        - il est compris par le métier
+        - il est stable
+
+
+Le modèle de conception : 
+    - A partir du modèle du domaine
+    - Prenant en compte l'architecture technique
+    - Le modèle de conception est efficace, performent, et fidèle
+    - il sera traduit en code
+
+Traduction en Java :
+    - Le type d'objet est une classe
+    - Les attributs sont les données
+    - Les méthodes sont les fonctions membres
+    - Les associations sont les attributs références
+    - Le code n'invente quasi rien 
+    - Le corps des méthodes n'est pas spécifié par un modèle de classe
+
+Definition objet :
+    - une entité vivante, qui réagit aux messages recus
+    - Un objet contient les données et les traitements qui permettent d'agir dessus
+    - Un objet a des frontières bien définis, des états et des comportements
+    - 
+
+Une classe est un type d'objet
+Une classe est aussi le descripteur d'objet
+Il y'a plusieurs sortes de classes (métiers, applicatives ...)
+Une classe est lisible dans les services qu'elle rend
+
+définir un bon objet métier : 
+    - Souvent repéré comme un groupe nominal dans un énoncé
+    - Un bon objet métier est manipuler par le métier
+    - il contient des données importantes
+
+Les classes applicatives :
+    - Une classe applicative correspond aux couches techniques
+    - Elle apparait dans le modèle de conception et n'est pas le reflet des objets métiers
+    - peuvent ne pas contenir de traitements
+
+Les classes contiennent toutes les données et traitements
+Rien ne peut être en dehors des classes
+Les objets masquent leur implémentation : encapsulation
+Les classes difinissent :
+    - les attributs (données)
+    - les methodes (traitements)
+
+Tableaux :
+
+- un ensemble contigue de même type de données
+- Le tableau est un objet
+- il ne fournit aucune informaton, n'a aucune intelligence
+- Le tableau d'objet en Java n'existe pas 
+- le tableau est un tableau de références et les références sont mises à null
+- il faut donc un autre new pour chaque objet dont on veut disposer
+- Tableau à deux dimensions est une matrice
+- il faut deux indices pour ranger un éléments dans un tableau
+- ArrayList une classe de collections (java.util.ArrayList), tableau dynamique, se redimentionne seule
+- Utiliser le nom de package d'une classe garantit l'absence de collision entre les noms de classe
+
+
+
+
+
+
+
+
+
+
+
+Architecture Logicielle : 
+    Les lignes d'intégration
+    - Static : la dll est chargée au niveau de la code source
+    - Dynamique : la dll est chargée au niveau de la mémoire
+    - c'est lorsque le programme est chargé en memoire que la dll est chargé
+    - Si le programme charge la dll il n'a pas besoin de se recompiler
+    - Par contre si on touche le code source (changement du code : fonction ou autre) le programme doit être recompiler
+    - la dll se trouve par defaut dans le dossier bin du projet
+
+
+    L'Architecture Logicielle avec UML
+        - utilisation et Assemblage
+        - delegue un sous composants
+
