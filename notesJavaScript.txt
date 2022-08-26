@@ -1,7 +1,19 @@
 
 Un Objet est un type de variable capable de stocker plusieurs propriétés.
 
+Les objets en javaScript sont dynamique i.e sont mutable (changeable)
+
 En JavaScript une fonction est un objet.
+
+IL existe 6 types de données primitifs en JavaScript
+
+### Connaitre le type d'une donnée :
+	- typeof(data)
+### Si on crée une variable on crée une nouvelle propriété window
+
+### l'Objet window est l'objet global ou l'objet par defaut de JavaScript
+
+### Les object nuturels de JavaScript sont : Math et window. Pour Node Js sont : Math et global
 
 ***********************************************************************************************
 un constructeur est une fonction
