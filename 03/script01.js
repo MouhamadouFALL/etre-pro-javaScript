@@ -1,5 +1,5 @@
 
-//FunctionFactory
+//Function Factory
 function createEmployee(firstName, lastName, country='Senegal'){
     return {
         firstName,

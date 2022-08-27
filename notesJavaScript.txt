@@ -16,19 +16,47 @@ IL existe 6 types de données primitifs en JavaScript
 ### Les object nuturels de JavaScript sont : Math et window. Pour Node Js sont : Math et global
 
 ***********************************************************************************************
+tout objet javascript possede un constructeur.
+Tout objet en JavaScript a un prototype
+un prototype est un objet
 un constructeur est une fonction
 une fonction est un objet
-Tout objet en JavaScript a un prototype
+
 ***********************************************************************************************
 
 Tous les objets en JavaScript implémente le même prototype de base
 
 le prototype est l'objet de base du JavaScript
-Le prototype du constructeur est devenu par la suite le prototype de l'objet construit.
+Le prototype du constructeur devient le prototype de l'objet construit.
 
 le constructeur de l'objet se trouve dans son prototype
 
 Les objets JavaScript sont mutable (on peut les ajouter ou retire des propriétés en cours de route);
+
+
+### Array :
+	> array.push() // ajoute un élément à la fin du tableau
+	> array.length // return la taille du tableu
+
+### motclé this : 
+	designe l'objet courant
+
+### Date():
+	> let date = new Date() 	// pour la date courante
+
+### Error():
+	> let e = new Error() 		// pour obtenir un objet Error que peut utiliser(personnaliser)
+
+### Chaque type primitif en javaScript a un constructeur
+
+### Mettre en private une propriété d'un objet : on utilise let namePropriete ou nameMethode
+	> let salary;
+
+### call() : permet d'utiliser les propriétés d'autre objets
+
+
+
+
 
 
 ************************************************************************************************************************

@@ -1,4 +1,5 @@
 
+// Abstraction de certaines propriétées
 function Employee (firstName, lastName, country='Senegal', gain=1500){
 
     let hireDate = new Date();
@@ -9,14 +10,20 @@ function Employee (firstName, lastName, country='Senegal', gain=1500){
         return baseSalary + (baseSalary * ((today.getFullYear() - hireDate.getFullYear()) * 0.01));
     }
 
-
-    
     this.firstName = firstName;
     this.lastName = lastName;
     this.country = country;
 
     this.sayHello = function (){
         return `${this.firstName} say welcome !`;
+    }
+
+    this.getSalary = () => {
+        return calculateSalary();
+    }
+
+    this.getHireDate = () => {
+        return hireDate;
     }
 
     Object.defineProperty(this, 'hireDate', {
@@ -32,11 +39,11 @@ function Employee (firstName, lastName, country='Senegal', gain=1500){
     });
 
     Object.defineProperty(this, 'baseSalary', {
-        get : function (){
+        get : () => {
             return baseSalary;
         },
-        set : function(newSalary){
-            if (typeof(newSalary) == 'number' && newSalary > baseSalary){
+        set : (newSalary) => {
+            if (typeof(newSalary) === 'number' && newSalary > baseSalary){
                 baseSalary = newSalary;
             }
             else {
